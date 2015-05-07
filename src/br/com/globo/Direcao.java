@@ -36,14 +36,13 @@ public enum Direcao {
 		return null;
 	}
 	
-	//movimento para esquerda, - 1, se o valor ficar negativo eh pq a direcao atual e N
 	public Direcao movimentoL() {
 		int novoCodigo = this.codigo - 1;
 		if(novoCodigo == -1)
 			novoCodigo = 3;
 		return buscaPorCodigo(novoCodigo);
 	}
-	//movimento para direita, + 1, se o valor ultrapassar 3 eh pq a direcao atual e W
+
 	public Direcao movimentoR() {
 		int novoCodigo = this.codigo + 1;
 		if(novoCodigo == 4)
